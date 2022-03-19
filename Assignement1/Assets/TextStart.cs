@@ -14,7 +14,6 @@ public class TextStart : MonoBehaviour
     void Start()
     {
         playerIndex = random.Next(0, 11);
-       
 
         RestClient.GetArray<string>("https://advassignment1-default-rtdb.firebaseio.com/users.json").Then(response =>
         {
